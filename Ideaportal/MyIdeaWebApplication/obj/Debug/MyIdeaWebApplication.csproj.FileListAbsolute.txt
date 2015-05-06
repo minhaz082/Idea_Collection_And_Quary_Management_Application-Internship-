@@ -1,0 +1,5 @@
+C:\Users\user\Desktop\minhaz\MyIdeaWebApplication\MyIdeaWebApplication\bin\MyIdeaWebApplication.dll
+C:\Users\user\Desktop\minhaz\MyIdeaWebApplication\MyIdeaWebApplication\bin\MyIdeaWebApplication.pdb
+C:\Users\user\Desktop\minhaz\MyIdeaWebApplication\MyIdeaWebApplication\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Desktop\minhaz\MyIdeaWebApplication\MyIdeaWebApplication\obj\Debug\MyIdeaWebApplication.dll
+C:\Users\user\Desktop\minhaz\MyIdeaWebApplication\MyIdeaWebApplication\obj\Debug\MyIdeaWebApplication.pdb

@@ -1,0 +1,203 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterHome.master.cs" Inherits="MyIdeaWebApplication.MasterHome" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Idea Portal</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- optional -->
+    <script type="text/javascript" src="js/jquery.shadow.js"></script>
+    <script type="text/javascript" src="js/jquery.ifixpng.js"></script>
+    <script type="text/javascript" src="js/jquery.fancyzoom.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#demo > a:first').fancyzoom({ Speed: 400, showoverlay: false });
+            $('#demo > a:last').fancyzoom({ Speed: 400, showoverlay: false });
+            $('#nooverlay').fancyzoom({ Speed: 400, showoverlay: false });
+            $('img.fancyzoom').fancyzoom();
+        });
+</script>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 128px;
+        }
+        .style5
+        {
+            text-align: right;
+        }
+        .style6
+        {
+            text-align: center;
+        }
+        .style7
+        {
+            float: left;
+            text-align: left;
+            font-weight: 700;
+        }
+        .style8
+        {
+            width: 128px;
+            height: 234px;
+        }
+        .style9
+        {
+            width: 1064px;
+            height: 234px;
+        }
+        .style10
+        {
+            height: 234px;
+        }
+        
+        .button
+        {
+            border: solid 1px #c0c0c0;
+            background-color: #D55500;
+            color: #ffffff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        A IMG
+        {
+            border: 0;
+        }
+        A
+        {
+            text-decoration: none;
+            color: #000;
+        }
+        #pageWrapper
+        {
+            margin: 0 auto;
+            width: 1000px;
+            border: 1px solid #000;
+            background: #FFF;
+            padding: 0px 20px 40px 20px;
+        }
+        h1
+        {
+           
+            font-size: 24px;
+        }
+        h2
+        {
+            font-size: 16px;
+            border-bottom: 1px solid #CCC;
+            margin-top: 40px;
+        }
+        h3
+        {
+            font-size: 14px;
+            border-bottom: 1px solid #CCC;
+            margin-left: 40px;
+        }
+        #demo A
+        {
+            display: block;
+            float: left;
+            width: 400px;
+            text-align: left;
+            text-decoration: none;
+            color: #000;
+            font-size: 11px;
+        }
+        #demo
+        {
+            padding-left: 200px;
+        }
+        #demo ul
+        {
+            text-align: left;
+            color: #000;
+        }
+        p.code
+        {
+            margin-left: 60px;
+        }
+        pre
+        {
+            margin-left: 60px;
+            background: #CCC;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body bgcolor="#1826B0">
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td class="style2">
+                &nbsp;
+            </td>
+            <td bgcolor="#4C59D8">
+                <h1>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label2" runat="server" Style="font-weight: 700;
+                        font-family: 'Showcard Gothic'; font-size: 50pt;" Text=" COMMERCIAL IDEA PORTAL"
+                        ForeColor="#990033"></asp:Label>
+                </h1>
+               
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                &nbsp;
+            </td>
+            <td class="style5" bgcolor="#2E3784">
+                <asp:Label ID="Label1" runat="server" class="style7" ForeColor="#00CC66" />
+                <asp:LoginView ID="LoginView1" runat="server">
+                    <AnonymousTemplate>
+                        <%--please <a href="Login.aspx">Login here</a>--%>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome
+                        <asp:LoginName ID="LoginName1" runat="server" />
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="RedirectToLoginPage"
+                    ForeColor="#00CC66" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style8">
+            </td>
+            <td class="style9" bgcolor="#64A8D1">
+                <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                    <!-- Page-specific content will go here... -->
+                </asp:ContentPlaceHolder>
+            </td>
+            <td class="style10">
+            </td>
+        </tr>
+        <tr>
+            <td class="style2">
+                &nbsp;
+            </td>
+            <td class="style6" bgcolor="#2E3784">
+                <!--Footer-->
+                &copy; GPIT-2012 &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+    <br />
+    </form>
+</body>
+</html>
